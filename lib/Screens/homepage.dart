@@ -690,6 +690,126 @@ class _HomepageState extends State<Homepage> {
               ),
 
               // Headings
+
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 120.0,
+                  vertical: 20,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Call Us for further details and get free inspection...",
+                      style: GoogleFonts.urbanist(
+                        fontSize: 40,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    Text(
+                      "Because you always need a Moreshwara Pest Control services",
+                      style: GoogleFonts.urbanist(
+                        fontSize: 40,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Text(
+                      "Assurance of service beyond service.",
+                      style: GoogleFonts.urbanist(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              //banner
+
+              Container(
+                height: 300,
+                width: double.infinity,
+                decoration: const BoxDecoration(
+                  color: Colors.black,
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      'https://images.unsplash.com/photo-1628352081506-83c43123ed6d?q=80&w=1896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    ),
+                    fit: BoxFit.fitWidth,
+                    opacity: 0.2,
+                  ),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.network(
+                          'https://cdn-icons-png.flaticon.com/512/44/44386.png',
+                          height: 150,
+                          color: const Color.fromARGB(255, 204, 204, 204),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          "Earth Friendly",
+                          style: GoogleFonts.urbanist(
+                            fontSize: 24,
+                            fontWeight: FontWeight.w700,
+                            color: const Color.fromARGB(255, 204, 204, 204),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.network(
+                          'https://cdn1.iconfinder.com/data/icons/insect-and-pest-control/500/Pest-insect-ban-control_9-512.png',
+                          height: 150,
+                          color: const Color.fromARGB(255, 204, 204, 204),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          "Targeted Prevention",
+                          style: GoogleFonts.urbanist(
+                            fontSize: 24,
+                            fontWeight: FontWeight.w700,
+                            color: const Color.fromARGB(255, 204, 204, 204),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.network(
+                          'https://cdn-icons-png.flaticon.com/512/161/161623.png',
+                          height: 150,
+                          color: const Color.fromARGB(255, 204, 204, 204),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          "Insured and Guaranteed",
+                          style: GoogleFonts.urbanist(
+                            fontSize: 24,
+                            fontWeight: FontWeight.w700,
+                            color: const Color.fromARGB(255, 204, 204, 204),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
