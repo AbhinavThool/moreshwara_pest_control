@@ -63,7 +63,13 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/moreshwara_logo.png
-  #   - images/a_dot_ham.jpeg
+    - assets/insect_icons/ant.png 
+    - assets/insect_icons/bedbug.png 
+    - assets/insect_icons/cockroach.png 
+    - assets/insect_icons/lizard.png 
+    - assets/insect_icons/spider.png 
+    - assets/insect_icons/termite.png 
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
