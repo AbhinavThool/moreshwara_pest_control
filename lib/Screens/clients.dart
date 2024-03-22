@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:moreshwara_pest_control/Screens/about_us.dart';
-import 'package:moreshwara_pest_control/Screens/clients.dart';
+import 'package:moreshwara_pest_control/Screens/contact_us.dart';
 import 'package:moreshwara_pest_control/Screens/homepage.dart';
+import 'package:moreshwara_pest_control/Screens/services.dart';
 
-class ContactUsPage extends StatefulWidget {
-  const ContactUsPage({super.key});
+class ClientsPage extends StatefulWidget {
+  const ClientsPage({super.key});
 
   @override
-  State<ContactUsPage> createState() => _ContactUsPageState();
+  State<ClientsPage> createState() => _ClientsPageState();
 }
 
-class _ContactUsPageState extends State<ContactUsPage> {
+class _ClientsPageState extends State<ClientsPage> {
   bool isHomeHovered = false;
   bool isAboutHovered = false;
   bool isServicesHovered = false;
@@ -191,7 +192,13 @@ class _ContactUsPageState extends State<ContactUsPage> {
                               });
                             },
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => const ServicesPage(),
+                                  ),
+                                );
+                              },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: isServicesHovered
                                     ? const Color.fromARGB(255, 248, 255, 119)
@@ -271,7 +278,7 @@ class _ContactUsPageState extends State<ContactUsPage> {
                   color: Colors.grey,
                 ),
                 child: Image.network(
-                  "https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk=",
+                  "https://image.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg",
                   fit: BoxFit.fitWidth,
                 ),
               ),
