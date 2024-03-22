@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Homepage extends StatefulWidget {
@@ -27,6 +28,17 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Colors.white,
+              Colors.white70,
+            ],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -66,13 +78,7 @@ class _HomepageState extends State<Homepage> {
                               });
                             },
                             child: ElevatedButton(
-                              onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => Homepage(),
-                                    ));
-                              },
+                              onPressed: () {},
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: isHomeHovered
                                     ? const Color.fromARGB(255, 248, 255, 119)
@@ -225,6 +231,250 @@ class _HomepageState extends State<Homepage> {
                             ),
                           ),
                           const SizedBox(width: 10),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+
+              // Banner Silder
+
+              CarouselSlider(
+                options: CarouselOptions(
+                  height: 450,
+                  enlargeCenterPage: true,
+                  autoPlay: true,
+                  aspectRatio: 16 / 9,
+                  autoPlayCurve: Curves.easeInOutCirc,
+                  enableInfiniteScroll: true,
+                  autoPlayAnimationDuration: const Duration(milliseconds: 800),
+                  viewportFraction: 0.99,
+                  initialPage: 0,
+                ),
+                items: images.map((item) {
+                  return Builder(
+                    builder: (BuildContext context) {
+                      return Container(
+                        width: MediaQuery.of(context).size.width,
+                        margin: const EdgeInsets.symmetric(horizontal: 5.0),
+                        decoration: const BoxDecoration(
+                          color: Colors.grey,
+                        ),
+                        child: Image.network(
+                          item,
+                          fit: BoxFit.cover,
+                        ),
+                      );
+                    },
+                  );
+                }).toList(),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+
+              // Intro
+
+              Container(
+                color: const Color.fromARGB(255, 250, 255, 163),
+                padding: const EdgeInsets.symmetric(vertical: 20),
+                child: Column(
+                  children: [
+                    Text(
+                      'Need Help With Moreshwara Enterprises?',
+                      style: GoogleFonts.urbanist(
+                        fontSize: 50,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      'We know how to protect your family, home and business!',
+                      style: GoogleFonts.urbanist(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w200,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+
+                    // Insect Icons
+
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 150.0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          // ants
+                          Column(
+                            children: [
+                              Container(
+                                height: 75,
+                                width: 75,
+                                decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      'https://static.thenounproject.com/png/97359-200.png', //ant
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'Ants',
+                                style: GoogleFonts.urbanist(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          // Spider
+                          Column(
+                            children: [
+                              Container(
+                                height: 75,
+                                width: 75,
+                                decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      'https://static.thenounproject.com/png/77640-200.png', //spider
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'Spider',
+                                style: GoogleFonts.urbanist(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          // Bedbug
+                          Column(
+                            children: [
+                              Container(
+                                height: 75,
+                                width: 75,
+                                decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      'https://cdn-icons-png.flaticon.com/512/1905/1905121.png', //bedbug
+                                    ),
+                                    fit: BoxFit.contain,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'Bedbug',
+                                style: GoogleFonts.urbanist(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          // Lizard
+                          Column(
+                            children: [
+                              Container(
+                                height: 75,
+                                width: 75,
+                                decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      'https://static.thenounproject.com/png/2778158-200.png', //lizard
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'Lizard',
+                                style: GoogleFonts.urbanist(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          // Termite
+                          Column(
+                            children: [
+                              Container(
+                                height: 75,
+                                width: 75,
+                                decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      'https://static.thenounproject.com/png/88872-200.png', //termite
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'Termite',
+                                style: GoogleFonts.urbanist(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          // Cockroach
+                          Column(
+                            children: [
+                              Container(
+                                height: 75,
+                                width: 75,
+                                decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      'https://static.thenounproject.com/png/32120-200.png', //cockroach
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'Cockroach',
+                                style: GoogleFonts.urbanist(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ],
+                          ),
                         ],
                       ),
                     ),
@@ -463,7 +713,7 @@ class _HomepageState extends State<Homepage> {
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    const SizedBox(height: 20),
+                    SizedBox(height: 20),
                     Text(
                       "Assurance of service beyond service.",
                       style: GoogleFonts.urbanist(
@@ -502,7 +752,7 @@ class _HomepageState extends State<Homepage> {
                           height: 150,
                           color: const Color.fromARGB(255, 204, 204, 204),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           height: 20,
                         ),
                         Text(
@@ -523,7 +773,7 @@ class _HomepageState extends State<Homepage> {
                           height: 150,
                           color: const Color.fromARGB(255, 204, 204, 204),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           height: 20,
                         ),
                         Text(
@@ -544,7 +794,7 @@ class _HomepageState extends State<Homepage> {
                           height: 150,
                           color: const Color.fromARGB(255, 204, 204, 204),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           height: 20,
                         ),
                         Text(
@@ -560,16 +810,6 @@ class _HomepageState extends State<Homepage> {
                   ],
                 ),
               ),
-
-              // Footer
-
-              Container(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 120.0,
-                  vertical: 20,
-                ),
-                child: Column(children: []),
-              )
             ],
           ),
         ),

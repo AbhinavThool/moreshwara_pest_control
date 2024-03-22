@@ -16,7 +16,7 @@ class _AboutUsState extends State<AboutUs> {
   TextEditingController descriptionTextEditingController =
       TextEditingController();
   TextEditingController numberTextEditingController = TextEditingController();
-  GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   bool isHomeHovered = false;
   bool isAboutHovered = false;
@@ -82,7 +82,7 @@ class _AboutUsState extends State<AboutUs> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => Homepage(),
+                                      builder: (context) => const Homepage(),
                                     ));
                               },
                               style: ElevatedButton.styleFrom(
@@ -286,10 +286,10 @@ class _AboutUsState extends State<AboutUs> {
                               //     "https://pestcontrolservicespune.com/images/norwegian-accreditation-surgical-supplies-1.jpg")
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
-                          Container(
+                          const SizedBox(
                             height: 800,
                             width: 600,
                             child: Text(
@@ -305,7 +305,7 @@ class _AboutUsState extends State<AboutUs> {
                       ),
                     ],
                   ),
-                  Container(
+                  SizedBox(
                     width: 400,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
