@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:moreshwara_pest_control/Screens/services.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -55,19 +54,109 @@ class _HomepageState extends State<Homepage> {
                     SizedBox(
                       child: Row(
                         children: [
-                          ElevatedButton(
-                            onPressed: () {},
-                            child: const Text("Home"),
+                          MouseRegion(
+                            onEnter: (_) {
+                              setState(() {
+                                isHomeHovered = true;
+                              });
+                            },
+                            onExit: (_) {
+                              setState(() {
+                                isHomeHovered = false;
+                              });
+                            },
+                            child: ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Homepage(),
+                                    ));
+                              },
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: isHomeHovered
+                                    ? const Color.fromARGB(255, 248, 255, 119)
+                                    : Colors.white,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 40,
+                                  vertical: 20,
+                                ),
+                                foregroundColor: Colors.black,
+                              ),
+                              child: Text(
+                                "Home",
+                                style: GoogleFonts.urbanist(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w200,
+                                ),
+                              ),
+                            ),
                           ),
-                          SizedBox(width: 10),
-                          ElevatedButton(
-                            onPressed: () {},
-                            child: const Text("About"),
+                          const SizedBox(width: 10),
+                          MouseRegion(
+                            onEnter: (_) {
+                              setState(() {
+                                isAboutHovered = true;
+                              });
+                            },
+                            onExit: (_) {
+                              setState(() {
+                                isAboutHovered = false;
+                              });
+                            },
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: isAboutHovered
+                                    ? const Color.fromARGB(255, 248, 255, 119)
+                                    : Colors.white,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 40,
+                                  vertical: 20,
+                                ),
+                                foregroundColor: Colors.black,
+                              ),
+                              child: Text(
+                                "About Us",
+                                style: GoogleFonts.urbanist(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w200,
+                                ),
+                              ),
+                            ),
                           ),
-                          SizedBox(width: 10),
-                          ElevatedButton(
-                            onPressed: () {},
-                            child: const Text("Services"),
+                          const SizedBox(width: 10),
+                          MouseRegion(
+                            onEnter: (_) {
+                              setState(() {
+                                isClientsHovered = true;
+                              });
+                            },
+                            onExit: (_) {
+                              setState(() {
+                                isClientsHovered = false;
+                              });
+                            },
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: isClientsHovered
+                                    ? const Color.fromARGB(255, 248, 255, 119)
+                                    : Colors.white,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 40,
+                                  vertical: 20,
+                                ),
+                                foregroundColor: Colors.black,
+                              ),
+                              child: Text(
+                                "Clients",
+                                style: GoogleFonts.urbanist(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w200,
+                                ),
+                              ),
+                            ),
                           ),
                           const SizedBox(width: 10),
                           MouseRegion(
@@ -102,11 +191,40 @@ class _HomepageState extends State<Homepage> {
                               ),
                             ),
                           ),
-                          SizedBox(width: 10),
-                          ElevatedButton(
-                            onPressed: () {},
-                            child: const Text("Contact Us"),
+                          const SizedBox(width: 10),
+                          MouseRegion(
+                            onEnter: (_) {
+                              setState(() {
+                                isContactHovered = true;
+                              });
+                            },
+                            onExit: (_) {
+                              setState(() {
+                                isContactHovered = false;
+                              });
+                            },
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: isContactHovered
+                                    ? const Color.fromARGB(255, 248, 255, 119)
+                                    : Colors.white,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 40,
+                                  vertical: 20,
+                                ),
+                                foregroundColor: Colors.black,
+                              ),
+                              child: Text(
+                                "Contact Us",
+                                style: GoogleFonts.urbanist(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w200,
+                                ),
+                              ),
+                            ),
                           ),
+                          const SizedBox(width: 10),
                         ],
                       ),
                     ),

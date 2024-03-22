@@ -48,11 +48,7 @@ packages:
       sha256: ee67cb0715911d28db6bf4af1026078bd6f0128b07a5f66fb2ed94ec6783c09a
       url: "https://pub.dev"
     source: hosted
-<<<<<<< HEAD
     version: "1.18.0"
-=======
-    version: "1.17.2"
->>>>>>> a80848c8ebfa0efcbb802cc5158b922d45c81322
   crypto:
     dependency: transitive
     description:
@@ -81,17 +77,14 @@ packages:
     dependency: transitive
     description:
       name: ffi
-<<<<<<< HEAD
       sha256: "493f37e7df1804778ff3a53bd691d8692ddf69702cf4c1c1096a2e41b4779e21"
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
-=======
       sha256: "7bf0adc28a23d395f19f3f1eb21dd7cfd1dd9f8e1c50051c069122e6853bc878"
       url: "https://pub.dev"
     source: hosted
     version: "2.1.0"
->>>>>>> a80848c8ebfa0efcbb802cc5158b922d45c81322
   flutter:
     dependency: "direct main"
     description: flutter
@@ -110,50 +103,35 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3af3f1821aaca38588bcd1bf2de79b3407d038dd
   flutter_web_plugins:
     dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.0"
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a80848c8ebfa0efcbb802cc5158b922d45c81322
->>>>>>> 3af3f1821aaca38588bcd1bf2de79b3407d038dd
   google_fonts:
     dependency: "direct main"
     description:
       name: google_fonts
-<<<<<<< HEAD
       sha256: b1ac0fe2832c9cc95e5e88b57d627c5e68c223b9657f4b96e1487aa9098c7b82
       url: "https://pub.dev"
     source: hosted
     version: "6.2.1"
-=======
       sha256: f0b8d115a13ecf827013ec9fc883390ccc0e87a96ed5347a3114cac177ef18e8
       url: "https://pub.dev"
     source: hosted
     version: "6.1.0"
->>>>>>> a80848c8ebfa0efcbb802cc5158b922d45c81322
   http:
     dependency: transitive
     description:
       name: http
-<<<<<<< HEAD
       sha256: "761a297c042deedc1ffbb156d6e2af13886bb305c2a343a4d972504cd67dd938"
       url: "https://pub.dev"
     source: hosted
     version: "1.2.1"
-=======
       sha256: "759d1a329847dd0f39226c688d3e06a6b8679668e350e2891a6474f8b4bb8525"
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
->>>>>>> a80848c8ebfa0efcbb802cc5158b922d45c81322
   http_parser:
     dependency: transitive
     description:
@@ -162,7 +140,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
-<<<<<<< HEAD
   leak_tracker:
     dependency: transitive
     description:
@@ -187,8 +164,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
-=======
->>>>>>> a80848c8ebfa0efcbb802cc5158b922d45c81322
   lints:
     dependency: transitive
     description:
