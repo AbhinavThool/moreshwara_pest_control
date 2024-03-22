@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:moreshwara_pest_control/Screens/about_us.dart';
+import 'package:moreshwara_pest_control/Screens/services.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -111,7 +113,13 @@ class _HomepageState extends State<Homepage> {
                               });
                             },
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => const AboutUs(),
+                                  ),
+                                );
+                              },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: isAboutHovered
                                     ? const Color.fromARGB(255, 248, 255, 119)
@@ -144,7 +152,13 @@ class _HomepageState extends State<Homepage> {
                               });
                             },
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => ServicesPage(),
+                                  ),
+                                );
+                              },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: isClientsHovered
                                     ? const Color.fromARGB(255, 248, 255, 119)
@@ -177,7 +191,13 @@ class _HomepageState extends State<Homepage> {
                               });
                             },
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => ServicesPage(),
+                                  ),
+                                );
+                              },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: isServicesHovered
                                     ? const Color.fromARGB(255, 248, 255, 119)
@@ -210,7 +230,13 @@ class _HomepageState extends State<Homepage> {
                               });
                             },
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => ServicesPage(),
+                                  ),
+                                );
+                              },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: isContactHovered
                                     ? const Color.fromARGB(255, 248, 255, 119)

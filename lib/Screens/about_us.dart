@@ -27,21 +27,22 @@ class _AboutUsState extends State<AboutUs> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-            height: double.infinity,
-            width: double.infinity,
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Colors.white,
-                  Colors.white70,
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
-            ),
-            child: SingleChildScrollView(
-                child: Column(children: [
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Colors.white,
+              Colors.white70,
+            ],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
               // Nav-Bar
 
               Padding(
@@ -246,8 +247,11 @@ class _AboutUsState extends State<AboutUs> {
               const SizedBox(
                 height: 10,
               ),
+
+              // banner
+
               Container(
-                height: 300,
+                height: 450,
                 width: MediaQuery.of(context).size.width,
                 margin: const EdgeInsets.symmetric(horizontal: 5.0),
                 decoration: const BoxDecoration(
@@ -258,7 +262,13 @@ class _AboutUsState extends State<AboutUs> {
                   fit: BoxFit.fill,
                 ),
               ),
+              SizedBox(height: 20),
+
+              // main
+
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -266,7 +276,7 @@ class _AboutUsState extends State<AboutUs> {
                       Text(
                         'Need Help With Moreshwara Enterprises?',
                         style: GoogleFonts.urbanist(
-                          fontSize: 50,
+                          fontSize: 30,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -274,33 +284,42 @@ class _AboutUsState extends State<AboutUs> {
                         height: 10,
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Column(
                             children: [
-                              Image.asset("assets/about_us/about.jpg"),
-
-                              Image.asset("assets/about_us/about2.jpg")
-                              // Image.network(
-                              //     "https://pestcontrolservicespune.com/images/about.jpg"),
-                              // Image.network(
-                              //     "https://pestcontrolservicespune.com/images/norwegian-accreditation-surgical-supplies-1.jpg")
+                              Image.network(
+                                "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+                                width: 200,
+                                height: 150,
+                              ),
+                              Image.network(
+                                "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+                                width: 200,
+                                height: 150,
+                              ),
                             ],
                           ),
                           const SizedBox(
                             width: 10,
                           ),
-                          const SizedBox(
-                            height: 800,
+                          SizedBox(
+                            height: 450,
                             width: 600,
                             child: Text(
-                                '''Tej Pest Control was established in the year 2007 after having rich experience in the same industry. We are an ISO 9001-2008 certified company has more than 10000 satisfied clients and well trained staff. We are active in commercial, residential, institutional and industrial pest management. We provide a full range of pest management services including insect and rodent management, maintenance programs for a wide range of industries, inspections, bird exclusion, odor control, seminars and consulting services. We actively practice Integrated Pest Management techniques as recommended by the Ministry of Environment. This practice promotes using pesticides only when required and in conjunction with other non-chemical controls. Our technicians receive ongoing, monthly training in this regard.
-                          
-                          We are providing 100% customized solution as per requirement, we don’t have any fixed treatment we change and design it according to the problem and the place and use a unique formulation of medicines to eradicate the problem naturally & environment friendly way.
-                          
-                          We specialized In:
-                          
-                          Tej Pest Control & Cleaning Services provide a wide range of Herbal Pest Control services for commercial and residential pest control services including cockroaches, bed bugs, rodent/mouse, lizards, honey bee, flies, mosquitoes, insects, termite, pigeon, ant control services and cleaning services like sofa cleaning, sofa steam cleaning, water tank cleaning, housekeeping services, deep cleaning services etc. in all ares of Pune and Satara.'''),
-                          )
+                              '''Tej Pest Control was established in the year 2007 after having rich experience in the same industry. We are an ISO 9001-2008 certified company has more than 10000 satisfied clients and well trained staff. We are active in commercial, residential, institutional and industrial pest management. We provide a full range of pest management services including insect and rodent management, maintenance programs for a wide range of industries, inspections, bird exclusion, odor control, seminars and consulting services. We actively practice Integrated Pest Management techniques as recommended by the Ministry of Environment. This practice promotes using pesticides only when required and in conjunction with other non-chemical controls. Our technicians receive ongoing, monthly training in this regard.
+
+                              We are providing 100% customized solution as per requirement, we don’t have any fixed treatment we change and design it according to the problem and the place and use a unique formulation of medicines to eradicate the problem naturally & environment friendly way.
+                              
+                              We specialized In:
+                              Tej Pest Control & Cleaning Services provide a wide range of Herbal Pest Control services for commercial and residential pest control services including cockroaches, bed bugs, rodent/mouse, lizards, honey bee, flies, mosquitoes, insects, termite, pigeon, ant control services and cleaning services like sofa cleaning, sofa steam cleaning, water tank cleaning, housekeeping services, deep cleaning services etc. in all ares of Pune and Satara.''',
+                              style: GoogleFonts.urbanist(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ],
@@ -313,7 +332,7 @@ class _AboutUsState extends State<AboutUs> {
                         Text(
                           'Contact us',
                           style: GoogleFonts.urbanist(
-                            fontSize: 50,
+                            fontSize: 30,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
@@ -322,14 +341,13 @@ class _AboutUsState extends State<AboutUs> {
                         ),
                         TextFormField(
                           controller: nameTextEditingController,
-                    
                           decoration: InputDecoration(
-                            hintText: "Enter name",
-                            label: const Text("Enter name"),
+                            alignLabelWithHint: true,
+                            hintText: "Enter Your Name",
+                            label: const Text("Enter Your Name"),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
-                            
                           ),
                           validator: (value) {
                             print("In name VALIDATOR");
@@ -342,20 +360,20 @@ class _AboutUsState extends State<AboutUs> {
                           keyboardType: TextInputType.text,
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         TextFormField(
                           controller: mailTextEditingController,
-                    
+
                           //obscureText: true,
                           //obscuringCharacter: "*",
                           decoration: InputDecoration(
-                            hintText: "Enter mail",
+                            alignLabelWithHint: true,
+                            hintText: "Enter Your Email",
+                            label: const Text("Enter Your Email"),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
-                            
-                            
                           ),
                           validator: (value) {
                             print("In mail VALIDATOR");
@@ -367,18 +385,17 @@ class _AboutUsState extends State<AboutUs> {
                           },
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         TextFormField(
                           controller: descriptionTextEditingController,
-                    
-                          
                           decoration: InputDecoration(
-                            hintText: "Enter description",
+                            alignLabelWithHint: true,
+                            hintText: "Enter Description",
+                            label: const Text("Enter Description"),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
-                            
                             suffixIcon: const Icon(
                               Icons.remove_red_eye_outlined,
                             ),
@@ -393,23 +410,22 @@ class _AboutUsState extends State<AboutUs> {
                           },
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         TextFormField(
                           controller: numberTextEditingController,
-                    
-                          
                           decoration: InputDecoration(
-                            hintText: "Enter Number",
+                            alignLabelWithHint: true,
+                            hintText: "Enter Your Number",
+                            label: const Text("Enter Your Number"),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
-                            
                           ),
                           validator: (value) {
                             print("In Number VALIDATOR");
                             if (value == null || value.isEmpty) {
-                              return "Please enter Numver";
+                              return "Please enter Number";
                             } else {
                               return null;
                             }
@@ -419,24 +435,31 @@ class _AboutUsState extends State<AboutUs> {
                           height: 20,
                         ),
                         ElevatedButton(
-                            onPressed: () {
-                              bool submitValidated =
-                                  _formKey.currentState!.validate();
-                              if (submitValidated) {
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  const SnackBar(
-                                    content: Text("Submit Successful"),
+                          onPressed: () {
+                            bool submitValidated =
+                                _formKey.currentState!.validate();
+                            if (submitValidated) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text(
+                                    "Submit Successful",
                                   ),
-                                );
-                              } else {
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  const SnackBar(
-                                    content: Text("Submit Failed"),
+                                ),
+                              );
+                            } else {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text(
+                                    "Submit Failed",
                                   ),
-                                );
-                              }
-                            },
-                            child: const Text("Submit"))
+                                ),
+                              );
+                            }
+                          },
+                          child: const Text(
+                            "Submit",
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -445,6 +468,10 @@ class _AboutUsState extends State<AboutUs> {
               const SizedBox(
                 height: 10,
               ),
-            ]))));
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
