@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:moreshwara_pest_control/Screens/services.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -177,7 +178,13 @@ class _HomepageState extends State<Homepage> {
                               });
                             },
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => ServicesPage(),
+                                  ),
+                                );
+                              },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: isServicesHovered
                                     ? const Color.fromARGB(255, 248, 255, 119)
@@ -713,7 +720,7 @@ class _HomepageState extends State<Homepage> {
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Text(
                       "Assurance of service beyond service.",
                       style: GoogleFonts.urbanist(
@@ -752,7 +759,7 @@ class _HomepageState extends State<Homepage> {
                           height: 150,
                           color: const Color.fromARGB(255, 204, 204, 204),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Text(
@@ -773,7 +780,7 @@ class _HomepageState extends State<Homepage> {
                           height: 150,
                           color: const Color.fromARGB(255, 204, 204, 204),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Text(
@@ -794,7 +801,7 @@ class _HomepageState extends State<Homepage> {
                           height: 150,
                           color: const Color.fromARGB(255, 204, 204, 204),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Text(
@@ -810,6 +817,16 @@ class _HomepageState extends State<Homepage> {
                   ],
                 ),
               ),
+
+              // Footer
+
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 120.0,
+                  vertical: 20,
+                ),
+                child: Column(children: []),
+              )
             ],
           ),
         ),
