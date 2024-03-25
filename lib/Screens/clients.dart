@@ -4,6 +4,7 @@ import 'package:moreshwara_pest_control/Screens/about_us.dart';
 import 'package:moreshwara_pest_control/Screens/contact_us.dart';
 import 'package:moreshwara_pest_control/Screens/homepage.dart';
 import 'package:moreshwara_pest_control/Screens/services.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ClientsPage extends StatefulWidget {
   const ClientsPage({super.key});
@@ -685,6 +686,21 @@ class _ClientsPageState extends State<ClientsPage> {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            _launchWhatsApp('+918329421541');
+          },
+          tooltip: 'Chat on WhatsApp',
+          child: Image.asset('assets/whatsapp_logo.png', fit: BoxFit.contain,), 
+        ),
     );
+  }
+}
+_launchWhatsApp(String phone) async {
+  String url = "https://wa.me/$phone";
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }
