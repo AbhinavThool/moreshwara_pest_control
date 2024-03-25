@@ -264,9 +264,7 @@ class _ClientsPageState extends State<ClientsPage> {
                   ],
                 ),
               ),
-              const SizedBox(
-                height: 10,
-              ),
+              const SizedBox(height: 10),
 
               // banner
 
@@ -374,9 +372,9 @@ class _ClientsPageState extends State<ClientsPage> {
 
               Container(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 150, vertical: 20),
+                    const EdgeInsets.symmetric(horizontal: 100, vertical: 20),
                 child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     // about
@@ -580,7 +578,7 @@ class _ClientsPageState extends State<ClientsPage> {
                     // Contact and address
 
                     SizedBox(
-                      width: 225,
+                      width: 275,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -656,21 +654,21 @@ class _ClientsPageState extends State<ClientsPage> {
                                 ),
                               ),
                               Text(
-                                "tejpestcontrolservices@gmail.com,",
+                                "moreshwarapestcontrolservices9@gmail.com",
                                 style: GoogleFonts.urbanist(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w200,
                                   color: Colors.black,
                                 ),
                               ),
-                              Text(
-                                "tejpestcontrolservices1@gmail.com,",
-                                style: GoogleFonts.urbanist(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w200,
-                                  color: Colors.black,
-                                ),
-                              ),
+                              // Text(
+                              //   "tejpestcontrolservices1@gmail.com,",
+                              //   style: GoogleFonts.urbanist(
+                              //     fontSize: 14,
+                              //     fontWeight: FontWeight.w200,
+                              //     color: Colors.black,
+                              //   ),
+                              // ),
                             ],
                           )
                         ],

@@ -367,9 +367,9 @@ class _ContactUsPageState extends State<ContactUsPage> {
 
               Container(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 150, vertical: 20),
+                    const EdgeInsets.symmetric(horizontal: 100, vertical: 20),
                 child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     // about
@@ -573,7 +573,7 @@ class _ContactUsPageState extends State<ContactUsPage> {
                     // Contact and address
 
                     SizedBox(
-                      width: 225,
+                      width: 275,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -649,21 +649,14 @@ class _ContactUsPageState extends State<ContactUsPage> {
                                 ),
                               ),
                               Text(
-                                "tejpestcontrolservices@gmail.com,",
+                                "moreshwarapestcontrolservices9@gmail.com",
                                 style: GoogleFonts.urbanist(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w200,
                                   color: Colors.black,
                                 ),
                               ),
-                              Text(
-                                "tejpestcontrolservices1@gmail.com,",
-                                style: GoogleFonts.urbanist(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w200,
-                                  color: Colors.black,
-                                ),
-                              ),
+                              
                             ],
                           )
                         ],
