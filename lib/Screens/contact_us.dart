@@ -657,7 +657,6 @@ class _ContactUsPageState extends State<ContactUsPage> {
                                   color: Colors.black,
                                 ),
                               ),
-                              
                             ],
                           )
                         ],
@@ -675,15 +674,19 @@ class _ContactUsPageState extends State<ContactUsPage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            _launchWhatsApp('+918329421541');
-          },
-          tooltip: 'Chat on WhatsApp',
-          child: Image.asset('assets/whatsapp_logo.png', fit: BoxFit.contain,), 
+        onPressed: () {
+          _launchWhatsApp('+918329421541');
+        },
+        tooltip: 'Chat on WhatsApp',
+        child: Image.asset(
+          'assets/whatsapp_logo.png',
+          fit: BoxFit.contain,
         ),
+      ),
     );
   }
 }
+
 _launchWhatsApp(String phone) async {
   String url = "https://wa.me/$phone";
   if (await canLaunch(url)) {
