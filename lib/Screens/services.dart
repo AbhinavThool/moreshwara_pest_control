@@ -292,15 +292,16 @@ class _ServicesPageState extends State<ServicesPage> {
               //Content
               Container(
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 150,
+                  horizontal: 100,
                   vertical: 20,
                 ),
                 child: Row(
+
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      width: 800,
+                      width: 600,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -316,7 +317,7 @@ class _ServicesPageState extends State<ServicesPage> {
 
                           //Table
                           SizedBox(
-                            width: 800,
+                            width: 600,
                             height: 520,
                             child: Table(
                               children: [
@@ -795,7 +796,7 @@ class _ServicesPageState extends State<ServicesPage> {
                               ],
                             ),
                           ),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 60),
 
                           //Information Para 1
                           Text(
@@ -821,7 +822,8 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
                           // List of insects
                           //1
                           SizedBox(
-                            width: 800,
+                            // width: 800,
+                            width: MediaQuery.of(context).size.width,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -852,7 +854,7 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 650,
+                                      width: 450,
                                       child: Text(
                                         'The length of time it takes to rid your home of a cockroach infestation depends largely upon species and size of infestation. Many over-the-counter products homeowners utilize often prove ineffective against a cockroach infestation. As most of these pests are extremely adaptable and may even be resistant to some home extermination methods. They hides in cracks crevices of kitchen washrooms shoeracks drainages lofts or beds etc so it is necessary to call trained pest control professionals like us. Tej pest control services has invented a best technique to overcome from cockroach and ants. The most advance technique is used at tej which will be resistance proof by pests call tej to know your solution.',
                                         style: GoogleFonts.urbanist(
@@ -901,7 +903,7 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 650,
+                                      width: 450,
                                       child: Text(
                                         "Owing to their wood-eating habits, many termite species do great damage to unprotected buildings documents furniture pop structure and other wooden structures.Their habit of remaining concealed often results in their presence being undetected until the timbers are severely damaged, leaving a thin layer of a wall that protects them from the environment. So it can be either treated preconstruction or post construction. we here at tej pest control give 3, 5 up to 50 years of warranty or AMC's check with help of latest instruments techniques and optimum tej formulation check with us which one is applicable at your place. Tej pest control services has better techniques to control Termite. Call us for free inspection and suggestions. Best termite pest control.use of IS-6313",
                                         style: GoogleFonts.urbanist(
@@ -950,7 +952,7 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 650,
+                                      width: 450,
                                       child: Text(
                                         'Pest Control Services in Sadashiv Peth, Pune Bed bugs live on human blood for survival. They generally hide in mattress seam and bed cracks. They may also hide in furniture and cracks & crevices in the wall. They spread mainly by baggage and clothing of travelers and visitors, bedding material and furniture. They need be to be treated thoroughly contact best pest control tej expert for complete eradication with eco friendly non hazardous way that you always wanted. Tej pest control services has vast experience in treatment of Bedbugs, Fleas, Ticks as well as all pests.',
                                         style: GoogleFonts.urbanist(
@@ -999,7 +1001,7 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 650,
+                                      width: 450,
                                       child: Text(
                                         'Pest Control Service near me, Pune The one near you are now considered as pests too because of its damage to humans. We here use harmless techniques for guaranteed results. Tej Pest Control services are leaders in complete bird control. Birds, especially pigeons are known to be one of the most disastrous and sickening pests. Pigeons are reservoirs of bacteria, fungi and viruses. Call us for birds pest control services.',
                                         style: GoogleFonts.urbanist(
@@ -1048,7 +1050,7 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 650,
+                                      width: 450,
                                       child: Text(
                                         'Pest Control Services in Aundh, Pune Rodents’ biology and habits can make them challenging to control, and they present a serious menace to your property. Rats can harbor and transmit a number of serious diseases. They can also introduce disease-carrying parasites such as fleas and ticks into your home. It is recommended that anyone experiencing a rodent infestation contact a pest control professional to arrange for a consultation. Solutions available are of most unique and experienced such as different baits and baits station traps etc. Tej Pest Control Services has worked in controlling of Rats, Mice, Snakes etc.',
                                         style: GoogleFonts.urbanist(
@@ -1097,7 +1099,7 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 650,
+                                      width: 450,
                                       child: Text(
                                         'Pest Control Services in Hinjewadi, Pune. This insects are big threats at premises for soft hearted and even for your reputation, so need to be treated carefully at regular intervals so as to be free from this crawlers. Tej Pest Control has special formulated techniques for Lizard, Spider, Crawling insects etc.',
                                         style: GoogleFonts.urbanist(
@@ -1146,7 +1148,7 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 650,
+                                      width: 450,
                                       child: Text(
                                         'Termite Control Services in Camp, Pune. You may not notice these beetles except when they collect talcum type powder on the furnitures parts sills or corners of the rooms in your house, but you will notice the tell tale flight holes and damage to wood around your home. Tej Pest Control services treat hear with help of injection course. With 100% guaranteed results.',
                                         style: GoogleFonts.urbanist(
@@ -1195,7 +1197,7 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 650,
+                                      width: 450,
                                       child: Text(
                                         'Bedbugs Pest Control Services in Lohegaon, Pune. Can be divided as dengue Mosquitoes, malaria Mosquitoes, household mosquitoes etc. Being a flying insects it needs to be treated carefully from its very first stage of larvae. Tej Pest Control has various treatments can be for fogging, chemical, biological, eco friendly as the problem seems to occur.',
                                         style: GoogleFonts.urbanist(
@@ -1244,7 +1246,7 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 650,
+                                      width: 450,
                                       child: Text(
                                         'Cockroach Pest Control Services in Koregaon Park, Pune. There are thousands of types of flies as per the area of occurrence carrying pathogens. These pathogens can cause disease in humans and animals, including typhoid fever, cholera, bacillary dysentery and hepatitis. Sanitation is critical to controlling these pests, but accurate identification is essential for successful fly control. So Tej Pest Control Services treat the area after inspection for critical problems options available are biological,chemical, baits, repellents etc call us for instant knockdown.',
                                         style: GoogleFonts.urbanist(
@@ -1266,6 +1268,7 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
                     SizedBox(
                       //Contact Form
                       width: 400,
+                      //width: MediaQuery.of(context).size.width,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -1807,15 +1810,19 @@ Pesticides often refer to the type of pest they control, e.g. insecticides kill 
         ),
       ),
       floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            _launchWhatsApp('+918329421541');
-          },
-          tooltip: 'Chat on WhatsApp',
-          child: Image.asset('assets/images/whatsapp_logo.png', fit: BoxFit.contain,), 
+        onPressed: () {
+          _launchWhatsApp('+918329421541');
+        },
+        tooltip: 'Chat on WhatsApp',
+        child: Image.asset(
+          'assets/images/whatsapp_logo.png',
+          fit: BoxFit.contain,
         ),
+      ),
     );
   }
 }
+
 _launchWhatsApp(String phone) async {
   String url = "https://wa.me/$phone";
   if (await canLaunch(url)) {
